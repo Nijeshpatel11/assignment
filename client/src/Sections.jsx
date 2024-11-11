@@ -6,7 +6,7 @@ const SectionsTable = () => {
     const [grandTotal, setGrandTotal] = useState(0);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/sections')
+        axios.get('https://assignment-1-hcwu.onrender.com/api/sections')
             .then(response => {
                 const fetchedSections = response.data[0].data.sections.map(section => {
                     
